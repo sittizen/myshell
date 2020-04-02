@@ -5,9 +5,9 @@ fish
 omf install bobthefish
 git clone https://github.com/ryanoasis/nerd-fonts.git
 ./nerd-fonts/install.sh
-set -g theme_nerd_fonts yes
-set -g theme_date_format "+%H:%M"
-set -g theme_display_cmd_duration no
+set -U theme_date_format "+%H:%M"
+set -U theme_display_cmd_duration no
+set -U DOCKER_HOST unix:///run/user/1000/docker.sock
 
 
 echo "tilix preferences default profile command -> run as login shell"
