@@ -1,4 +1,4 @@
-sudo apt install tilix
+apt install tilix
 
 curl -L https://get.oh-my.fish | fish
 fish

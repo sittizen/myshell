@@ -1,2 +1,2 @@
-sudo apt install uidmap
-bash get_docker.sh
+apt install uidmap
+su $1 bash get_docker.sh
