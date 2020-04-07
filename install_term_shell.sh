@@ -8,6 +8,8 @@ git clone https://github.com/ryanoasis/nerd-fonts.git
 set -U theme_date_format "+%H:%M"
 set -U theme_display_cmd_duration no
 set -U DOCKER_HOST unix:///run/user/1000/docker.sock
+mkdir ~/.config/fish/completions
+wget https://raw.github.com/barnybug/docker-fish-completion/master/docker.fish -O ~/.config/fish/completions/docker.fish
 
 
 echo "tilix preferences default profile command -> run as login shell"
