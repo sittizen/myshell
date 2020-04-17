@@ -7,7 +7,7 @@ git clone https://github.com/ryanoasis/nerd-fonts.git
 ./nerd-fonts/install.sh
 set -U theme_date_format "+%H:%M"
 set -U theme_display_cmd_duration no
-set -U DOCKER_HOST unix:///run/user/1000/docker.sock
+set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/docker.sock
 set -U fish_user_paths $HOME/.local/bin/
 mkdir ~/.config/fish/completions
 wget https://raw.github.com/barnybug/docker-fish-completion/master/docker.fish -O ~/.config/fish/completions/docker.fish
