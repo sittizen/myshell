@@ -9,7 +9,8 @@ git clone https://github.com/ryanoasis/nerd-fonts.git
 ./nerd-fonts/install.sh
 set -U theme_date_format "+%H:%M"
 set -U theme_display_cmd_duration no
-
+set -Ux VAULT_ADDR https://vault.pycc-test.gmolapps.lcl
+set -Ux VAULT_CACERT /home/simonecittadini/Documents/cacert.pem
 
 echo "tilix preferences default profile command -> run as login shell"
 echo "tilix preferences default profile command -> custom shell /usr/bin/fish"
