@@ -19,3 +19,4 @@ echo "tilix preferences default profile color -> color scheme solarized dark"
 echo "tilix preferences default profile color -> don't use theme colors for fore/back"
 
 alias git-prune="git branch --merged | egrep -v '(^\*|master|dev|production|test)' | xargs git branch -d" 
+alias vt="set -x VAULT_TOKEN (vault login -method=oidc -token-only 2>/dev/null)"
