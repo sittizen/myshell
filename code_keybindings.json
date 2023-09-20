@@ -1,0 +1,126 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {   "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "editor.action.fontZoomReset"
+    }, // move cursor
+    {
+        "key": "alt+i",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "up"
+        }
+    },{
+        "key": "alt+k",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "down"
+        }
+    },{
+        "key": "alt+j",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "left"
+        }
+    },{
+        "key": "alt+l",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "right"
+        }
+    },{
+        "key": "alt+o",
+        "command": "cursorWordEndRight",
+        "when": "editorTextFocus",
+    },{
+        "key": "alt+u",
+        "command": "cursorWordEndLeft",
+        "when": "editorTextFocus",
+    },{
+        "key": "alt+f",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "wrappedLineEnd"
+        }
+    },{
+        "key": "alt+s",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "wrappedLineFirstNonWhitespaceCharacter"
+        }
+    },{
+        "key": "alt+e",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "prevBlankLine"
+        }
+    },{
+        "key": "alt+d",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "nextBlankLine"
+        }
+    },{ // move and select
+        "key": "alt+shift+i",
+        "command": "cursorUpSelect",
+        "when": "textInputFocus",
+    },{
+        "key": "alt+shift+k",
+        "command": "cursorDownSelect",
+        "when": "textInputFocus",
+    },{
+        "key": "alt+shift+j",
+        "command": "cursorLeftSelect",
+        "when": "textInputFocus",
+    },{
+        "key": "alt+shift+l",
+        "command": "cursorRightSelect",
+        "when": "textInputFocus",
+    },{
+        "key": "alt+shift+o",
+        "command": "cursorWordEndRightSelect",
+        "when": "textInputFocus",
+    },{
+        "key": "alt+shift+u",
+        "command": "cursorWordEndLeftSelect",
+        "when": "textInputFocus",
+    },{ // delete
+        "key": "alt+n",
+        "command": "deleteRight",
+        "when": "textInputFocus && !editorReadonly"
+    },{ 
+        "key": "alt+m",
+        "command": "deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+    },{
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.terminal.focus",
+        "when": "workbench.panel.repl.view.active"
+    }
+]
