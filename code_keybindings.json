@@ -122,5 +122,17 @@
         "key": "ctrl+shift+t",
         "command": "workbench.action.terminal.focus",
         "when": "workbench.panel.repl.view.active"
+    },{ // comment
+        "key": "ctrl+\\",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly" 
+    },{
+        "key": "ctrl+shift+k",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+        },{
+        "key": "ctrl+shift+i",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
