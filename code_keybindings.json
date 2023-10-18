@@ -15,7 +15,7 @@
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
-    {   "key": "ctrl+w",
+    {   "key": "ctrl+t",
         "command": "workbench.action.closeActiveEditor"
     },
     {
@@ -56,7 +56,7 @@
         "when": "editorTextFocus",
     },{
         "key": "alt+u",
-        "command": "cursorWordEndLeft",
+        "command": "cursorWordLeft",
         "when": "editorTextFocus",
     },{
         "key": "alt+f",
@@ -110,6 +110,11 @@
         "key": "alt+shift+u",
         "command": "cursorWordEndLeftSelect",
         "when": "textInputFocus",
+
+    },{
+        "key": "alt+t",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus",
     },{ // delete
         "key": "alt+n",
         "command": "deleteRight",
@@ -118,10 +123,10 @@
         "key": "alt+m",
         "command": "deleteWordRight",
         "when": "textInputFocus && !editorReadonly"
-    },{
-        "key": "ctrl+shift+t",
-        "command": "workbench.action.terminal.focus",
-        "when": "workbench.panel.repl.view.active"
+    },{ 
+        "key": "alt+backspace",
+        "command": "deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
     },{ // comment
         "key": "ctrl+\\",
         "command": "editor.action.commentLine",
@@ -134,5 +139,25 @@
         "key": "ctrl+shift+i",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
+    },{
+        "key": "alt+shift+g",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus && !editorReadonly"
+    },{ // debug
+        "key": "ctrl+shift+[Comma] d",
+        "command": "test-explorer.debug-test-at-cursor",
+        "when": "editorTextFocus && !editorReadonly"
+    },{ 
+        "key": "ctrl+shift+[Comma] b",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+    },{
+        "key": "alt+t",
+        "command": "terminal.focus",
+        "when": "!terminalFocus"
+    },{
+        "key": "alt+t",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
     }
 ]
