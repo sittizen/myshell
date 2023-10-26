@@ -27,3 +27,4 @@ alias standup="git-standup -d 1 -a simone.cittadini && git-standup -d 1 -a franc
 alias cdp="cd ~/workspace/pycc && code ."
 alias cdpd="cd ~/workspace/pycc-dpe"
 alias czc="git add -A . && cz commit"
+alias cat="bat -p"
