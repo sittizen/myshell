@@ -110,11 +110,14 @@
         "key": "alt+shift+u",
         "command": "cursorWordEndLeftSelect",
         "when": "textInputFocus",
-
     },{
-        "key": "alt+t",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus",
+        "key": "alt+shift+n",
+        "command": "cursorColumnSelectDown",
+        "when": "textInputFocus",
+    },{
+        "key": "alt+shift+m",
+        "command": "cursorColumnSelectUp",
+        "when": "textInputFocus",
     },{ // delete
         "key": "alt+n",
         "command": "deleteRight",
@@ -152,11 +155,11 @@
         "command": "editor.debug.action.toggleBreakpoint",
         "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
     },{
-        "key": "alt+t",
+        "key": "alt+q",
         "command": "terminal.focus",
         "when": "!terminalFocus"
     },{
-        "key": "alt+t",
+        "key": "alt+q",
         "command": "workbench.action.togglePanel",
         "when": "terminalFocus"
     }
