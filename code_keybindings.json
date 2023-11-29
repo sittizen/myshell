@@ -1,5 +1,9 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
+    
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.focusNextGroup"
+    },
     {
         "key": "ctrl+x",
         "command": "editor.action.clipboardCutAction",
