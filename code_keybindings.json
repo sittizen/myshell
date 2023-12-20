@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
     
     {
@@ -10,7 +11,7 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+y",
+        "key": "alt+y",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },
@@ -149,15 +150,23 @@
     },{
         "key": "alt+shift+g",
         "command": "editor.action.goToDeclaration",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus"
     },{ // debug
         "key": "ctrl+shift+[Comma] d",
         "command": "test-explorer.debug-test-at-cursor",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus"
     },{ 
         "key": "ctrl+shift+[Comma] b",
         "command": "editor.debug.action.toggleBreakpoint",
         "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+    },{ 
+        "key": "ctrl+shift+[Comma] r",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+    },{ 
+        "key": "alt+shift+s",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
     },{
         "key": "alt+q",
         "command": "terminal.focus",
