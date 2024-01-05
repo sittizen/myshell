@@ -1,6 +1,11 @@
 // Place your key bindings in this file to override the defaultsauto[]
-[
-    
+[ 
+    // disable 
+    {   "key": "ctrl+shift+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active" 
+    },
+    // custom
     {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.focusNextGroup"
@@ -123,6 +128,14 @@
         "key": "alt+shift+m",
         "command": "cursorColumnSelectUp",
         "when": "textInputFocus",
+    },{
+        "key": "alt+k",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },{
+        "key": "alt+i",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
     },{ // delete
         "key": "alt+n",
         "command": "deleteRight",
