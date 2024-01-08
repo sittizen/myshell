@@ -136,6 +136,14 @@
         "key": "alt+i",
         "command": "workbench.action.quickOpenNavigatePrevious",
         "when": "inQuickOpen"
+    },{
+        "key": "alt+i",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus",
+    },{
+        "key": "alt+k",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus",
     },{ // delete
         "key": "alt+n",
         "command": "deleteRight",
