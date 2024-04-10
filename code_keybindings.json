@@ -7,6 +7,14 @@
     },
     // custom
     {
+        "key": "ctrl+shift+[comma] l",
+        "command": "workbench.action.positionPanelRight"
+    },
+    {
+        "key": "ctrl+shift+[comma] k",
+        "command": "workbench.action.positionPanelBottom"
+    },
+    {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.focusNextGroup"
     },
