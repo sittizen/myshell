@@ -1,45 +1,65 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [ 
     // disable 
     {   "key": "ctrl+shift+m",
         "command": "-workbench.actions.view.problems",
         "when": "workbench.panel.markers.view.active" 
     },
-    // custom
-    {
+    // views
+    {   "key": "ctrl+shift+q",
+        "command": "workbench.action.closeSidebar",
+    },{
         "key": "ctrl+shift+[comma] l",
         "command": "workbench.action.positionPanelRight"
-    },
-    {
+    },{
         "key": "ctrl+shift+[comma] k",
         "command": "workbench.action.positionPanelBottom"
-    },
-    {
+    },{
         "key": "ctrl+shift+tab",
         "command": "workbench.action.focusNextGroup"
-    },
-    {
+    },{
         "key": "ctrl+x",
         "command": "editor.action.clipboardCutAction",
         "when": "textInputFocus && !editorReadonly"
-    },
-    {
+    },{
         "key": "alt+y",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
-    },
-    {
+    },{
         "key": "ctrl+d",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
-    },
-    {   "key": "ctrl+t",
+    },{
+        "key": "ctrl+t",
         "command": "workbench.action.closeActiveEditor"
-    },
-    {
+    },{
         "key": "ctrl+0",
         "command": "editor.action.fontZoomReset"
-    }, // move cursor
+    },{
+        "key": "alt+q",
+        "command": "terminal.focus",
+        "when": "!terminalFocus"
+    },{
+        "key": "alt+q",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },{
+        "key": "alt+a",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
+    },{
+        "key": "alt+h",
+        "command": "workbench.action.increaseViewWidth"
+    },{
+        "key": "alt+g",
+        "command": "workbench.action.decreaseViewWidth"
+    },{
+        "key": "alt+b",
+        "command": "workbench.action.increaseViewHeight"
+    },{
+        "key": "alt+t",
+        "command": "workbench.action.decreaseViewHeight"
+    }, 
+    // move cursor
     {
         "key": "alt+i",
         "command": "cursorMove",
@@ -180,7 +200,8 @@
         "key": "alt+shift+g",
         "command": "editor.action.goToDeclaration",
         "when": "editorTextFocus"
-    },{ // debug
+    }, // debug
+    { 
         "key": "ctrl+shift+[Comma] d",
         "command": "test-explorer.debug-test-at-cursor",
         "when": "editorTextFocus"
@@ -196,13 +217,5 @@
         "key": "alt+shift+s",
         "command": "workbench.action.debug.stepOver",
         "when": "debugState == 'stopped'"
-    },{
-        "key": "alt+q",
-        "command": "terminal.focus",
-        "when": "!terminalFocus"
-    },{
-        "key": "alt+q",
-        "command": "workbench.action.togglePanel",
-        "when": "terminalFocus"
     }
 ]
