@@ -47,16 +47,16 @@
         "command": "workbench.action.togglePanel",
         "when": "terminalFocus"
     },{
-        "key": "alt+h",
+        "key": "alt+g",
         "command": "workbench.action.increaseViewWidth"
     },{
-        "key": "alt+g",
+        "key": "alt+h",
         "command": "workbench.action.decreaseViewWidth"
     },{
         "key": "alt+b",
         "command": "workbench.action.increaseViewHeight"
     },{
-        "key": "alt+t",
+        "key": "alt+r",
         "command": "workbench.action.decreaseViewHeight"
     }, 
     // move cursor
@@ -200,7 +200,11 @@
         "key": "alt+shift+g",
         "command": "editor.action.goToDeclaration",
         "when": "editorTextFocus"
-    }, // debug
+    }, { "key": "alt+l",            "command": "breadcrumbs.focusNext",
+                                     "when": "breadcrumbsActive && breadcrumbsVisible" },
+    { "key": "alt+j",             "command": "breadcrumbs.focusPrevious",
+                                     "when": "breadcrumbsActive && breadcrumbsVisible" },
+    // debug
     { 
         "key": "ctrl+shift+[Comma] d",
         "command": "test-explorer.debug-test-at-cursor",
