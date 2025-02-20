@@ -1,9 +1,13 @@
 # run as root
 apt-get update
-apt-get install htop bat
+apt-get install htop bat ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
 
 mv /usr/bin/cat /usr/bin/cat.bu
 ln -s /usr/bin/batcat /usr/bin/cat
+ln -s /usr/bin/bat /usr/bin/bat
+
+wget https://github.com/sxyazi/yazi/releases/tag/v25.2.11
+
 
 wget https://releases.hashicorp.com/vault/1.18.4/vault_1.18.4_linux_amd64.zip
 unzip vault_1.18.4_linux_amd64.zip
