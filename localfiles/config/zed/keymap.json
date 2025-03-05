@@ -1,0 +1,41 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {}
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-i": "editor::MoveUp",
+      "alt-j": "editor::MoveLeft",
+      "alt-k": "editor::MoveDown",
+      "alt-l": "editor::MoveRight",
+      "alt-n": "editor::Delete",
+      "alt-m": "editor::DeleteToNextWordEnd",
+      "alt-s": [
+        "editor::MoveToBeginningOfLine",
+        {
+          "stop_at_soft_wraps": true,
+          "stop_at_indent": true
+        }
+      ],
+      "alt-f": [
+        "editor::MoveToEndOfLine",
+        {
+          "stop_at_soft_wraps": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {}
+  }
+]
