@@ -5,7 +5,14 @@
         "when": "workbench.panel.markers.view.active" 
     },
     // views
-    {   "key": "ctrl+shift+q",
+    { 
+        "key": "ctrl+shift+s",
+        "command": "workbench.view.search"
+    },{ 
+        "key": "ctrl+shift+[comma] p",
+        "command": "workbench.action.splitEditorRight"
+    },{   
+        "key": "ctrl+shift+q",
         "command": "workbench.action.closeSidebar",
     },{
         "key": "ctrl+shift+[comma] l",
@@ -47,10 +54,10 @@
         "command": "workbench.action.togglePanel",
         "when": "terminalFocus"
     },{
-        "key": "alt+g",
+        "key": "alt+h",
         "command": "workbench.action.increaseViewWidth"
     },{
-        "key": "alt+h",
+        "key": "alt+g",
         "command": "workbench.action.decreaseViewWidth"
     },{
         "key": "alt+b",
@@ -111,19 +118,13 @@
             "to": "wrappedLineFirstNonWhitespaceCharacter"
         }
     },{
-        "key": "alt+e",
-        "command": "cursorMove",
-        "when": "editorTextFocus",
-        "args": {
-            "to": "prevBlankLine"
-        }
+        "key": "alt+r",
+        "command": "gotoNextPreviousMember.previousMember",
+        "when": "editorTextFocus"
     },{
-        "key": "alt+d",
-        "command": "cursorMove",
-        "when": "editorTextFocus",
-        "args": {
-            "to": "nextBlankLine"
-        }
+        "key": "alt+t",
+        "command": "gotoNextPreviousMember.nextMember",
+        "when": "editorTextFocus"
     },{ // move and select
         "key": "alt+shift+i",
         "command": "cursorUpSelect",
@@ -180,9 +181,25 @@
         "key": "alt+m",
         "command": "deleteWordRight",
         "when": "textInputFocus && !editorReadonly"
-    },{ 
-        "key": "alt+backspace",
+    },{
+        "key": "alt+d w",
+        "command": "deleteInsideWord",
+        "when": "textInputFocus && !editorReadonly"
+    },{
+        "key": "alt+d b",
         "command": "deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },{
+        "key": "alt+d e",
+        "command": "deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+    },{
+        "key": "alt+d s",
+        "command": "deleteAllRight",
+        "when": "textInputFocus && !editorReadonly"
+    },{
+        "key": "alt+d a",
+        "command": "deleteAllLeft",
         "when": "textInputFocus && !editorReadonly"
     },{ // comment
         "key": "ctrl+\\",
@@ -200,26 +217,26 @@
         "key": "alt+shift+g",
         "command": "editor.action.goToDeclaration",
         "when": "editorTextFocus"
-    }, { "key": "alt+l",            "command": "breadcrumbs.focusNext",
-                                     "when": "breadcrumbsActive && breadcrumbsVisible" },
-    { "key": "alt+j",             "command": "breadcrumbs.focusPrevious",
-                                     "when": "breadcrumbsActive && breadcrumbsVisible" },
+    },{
+        "key": "alt+l",
+        "command": "breadcrumbs.focusNext",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },{   "key": "alt+j",
+        "command": "breadcrumbs.focusPrevious",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
     // debug
     { 
-        "key": "ctrl+shift+[Comma] d",
-        "command": "test-explorer.debug-test-at-cursor",
-        "when": "editorTextFocus"
-    },{ 
         "key": "ctrl+shift+[Comma] b",
         "command": "editor.debug.action.toggleBreakpoint",
         "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
     },{ 
-        "key": "ctrl+shift+[Comma] r",
-        "command": "workbench.action.debug.start",
-        "when": "debuggersAvailable && debugState == 'inactive'"
-    },{ 
         "key": "alt+shift+s",
         "command": "workbench.action.debug.stepOver",
         "when": "debugState == 'stopped'"
+    },{
+        "key": "alt+p s",
+        "command": "periscope.search"
     }
 ]
+
