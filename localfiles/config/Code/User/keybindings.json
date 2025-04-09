@@ -6,31 +6,20 @@
     },
     // views
     { 
-        "key": "ctrl+shift+s",
-        "command": "workbench.view.search"
-    },{ 
-        "key": "ctrl+shift+[comma] p",
+        "key": "alt+v p",
         "command": "workbench.action.splitEditorRight"
     },{   
-        "key": "ctrl+shift+q",
+        "key": "alt+v q",
         "command": "workbench.action.closeSidebar",
     },{
-        "key": "ctrl+shift+[comma] l",
+        "key": "alt+v l",
         "command": "workbench.action.positionPanelRight"
     },{
-        "key": "ctrl+shift+[comma] k",
+        "key": "alt+v k",
         "command": "workbench.action.positionPanelBottom"
     },{
         "key": "ctrl+shift+tab",
         "command": "workbench.action.focusNextGroup"
-    },{
-        "key": "ctrl+x",
-        "command": "editor.action.clipboardCutAction",
-        "when": "textInputFocus && !editorReadonly"
-    },{
-        "key": "alt+y",
-        "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
     },{
         "key": "ctrl+d",
         "command": "editor.action.copyLinesDownAction",
@@ -174,14 +163,6 @@
         "command": "list.focusDown",
         "when": "listFocus && !inputFocus",
     },{ // delete
-        "key": "alt+n",
-        "command": "deleteRight",
-        "when": "textInputFocus && !editorReadonly"
-    },{ 
-        "key": "alt+m",
-        "command": "deleteWordRight",
-        "when": "textInputFocus && !editorReadonly"
-    },{
         "key": "alt+d w",
         "command": "deleteInsideWord",
         "when": "textInputFocus && !editorReadonly"
@@ -200,6 +181,10 @@
     },{
         "key": "alt+d a",
         "command": "deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },{
+        "key": "alt+d d",
+        "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },{ // comment
         "key": "ctrl+\\",
@@ -235,8 +220,7 @@
         "command": "workbench.action.debug.stepOver",
         "when": "debugState == 'stopped'"
     },{
-        "key": "alt+p s",
+        "key": "alt+p",
         "command": "periscope.search"
     }
 ]
-
