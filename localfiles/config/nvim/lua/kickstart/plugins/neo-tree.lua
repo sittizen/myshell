@@ -18,6 +18,8 @@ return {
       window = {
         mappings = {
           ['\\'] = 'close_window',
+          ['h'] = 'show_file_details',
+          ['i'] = 'move_cursor_up',
         },
       },
     },

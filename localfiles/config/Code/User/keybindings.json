@@ -186,6 +186,10 @@
         "key": "alt+d d",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
+    },{
+        "key": "alt+n",
+        "command": "deleteRight",
+        "when": "textInputFocus && !editorReadonly"
     },{ // comment
         "key": "ctrl+\\",
         "command": "editor.action.commentLine",
