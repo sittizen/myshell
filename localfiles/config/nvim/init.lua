@@ -97,18 +97,6 @@ vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "Use i to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use k to move!!"<CR>')
 
--- Arrow keys to what I'm used to
-vim.keymap.set('n', 'h', 'i')
-vim.keymap.set('n', 'i', '<up>')
-vim.keymap.set('n', 'j', '<left>')
-vim.keymap.set('n', 'k', '<down>')
-vim.keymap.set('n', 'l', '<right>')
-
-vim.keymap.set("n", "<C-i>", ":m .-2<CR>==") -- move line down(n)
-vim.keymap.set("n", "<C-k>", ":m .+1<CR>==") -- move line up(n)
-vim.keymap.set("v", "<C-k>", ":m '>+1<CR>gv=gv") -- move line up(v)
-vim.keymap.set("v", "<C-i>", ":m '<-2<CR>gv=gv") -- move line down(v)
-
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -900,3 +888,26 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+-- 
+-- Arrow keys with what I'm used to
+vim.keymap.set('n', 'h', 'i')
+vim.keymap.set('n', 'i', '<up>')
+vim.keymap.set('n', 'j', '<left>')
+vim.keymap.set('n', 'k', '<down>')
+vim.keymap.set('n', 'l', '<right>')
+
+vim.keymap.set('x', 'i', '<up>')
+vim.keymap.set('x', 'j', '<left>')
+vim.keymap.set('x', 'k', '<down>')
+vim.keymap.set('x', 'l', '<right>')
+
+vim.keymap.set('v', 'i', '<up>')
+vim.keymap.set('v', 'j', '<left>')
+vim.keymap.set('v', 'k', '<down>')
+vim.keymap.set('v', 'l', '<right>')
+
+-- Move lines with what I'm used to
+vim.keymap.set("n", "<C-i>", ":m .-2<CR>==")
+vim.keymap.set("n", "<C-k>", ":m .+1<CR>==")
+vim.keymap.set("v", "<C-k>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<C-i>", ":m '<-2<CR>gv=gv")
