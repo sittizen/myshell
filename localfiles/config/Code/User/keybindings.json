@@ -5,44 +5,40 @@
         "when": "workbench.panel.markers.view.active" 
     },
     // views
-    //{ 
-    //    "key": "alt+v p",
-    //    "command": "workbench.action.splitEditorRight"
-    //},{   
-    //    "key": "alt+v q",
-    //    "command": "workbench.action.closeSidebar",
-    //},{
-    //    "key": "alt+v l",
-    //    "command": "workbench.action.positionPanelRight"
-    //},{
-    //    "key": "alt+v k",
-    //    "command": "workbench.action.positionPanelBottom"
-    //},{
-    //    "key": "ctrl+shift+tab",
-    //    "command": "workbench.action.focusNextGroup"
-    //},{
-    //    "key": "ctrl+d",
-    //    "command": "editor.action.copyLinesDownAction",
-    //    "when": "editorTextFocus && !editorReadonly"
-    //},{
-    //    "key": "ctrl+t",
-    //    "command": "workbench.action.closeActiveEditor"
-    //},{
-    //    "key": "ctrl+0",
-    //    "command": "editor.action.fontZoomReset"
-    //},{
-    //    "key": "alt+q",
-    //    "command": "terminal.focus",
-    //    "when": "!terminalFocus"
-    //},{
-    //    "key": "alt+q",
-    //    "command": "workbench.action.focusActiveEditorGroup",
-    //    "when": "terminalFocus"
-    //},{
-    //    "key": "alt+a",
-    //    "command": "workbench.action.togglePanel",
-    //    "when": "terminalFocus"
-    //},
+    { 
+        "key": "alt+v p",
+        "command": "workbench.action.splitEditorRight"
+    },{   
+        "key": "alt+v s",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },{
+        "key": "alt+v l",
+        "command": "workbench.action.positionPanelRight"
+    },{
+        "key": "alt+v k",
+        "command": "workbench.action.positionPanelBottom"
+    },{
+       "key": "ctrl+shift+tab",
+       "command": "workbench.action.focusNextGroup"
+    },{
+        "key": "alt+v c",
+        "command": "workbench.action.closeActiveEditor"
+    },{
+        "key": "ctrl+0",
+        "command": "editor.action.fontZoomReset"
+    },{
+        "key": "alt+q",
+        "command": "terminal.focus",
+        "when": "!terminalFocus"
+    },{
+        "key": "alt+q",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorFocus"
+    },{
+        "key": "alt+a",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
+    },{
     //{
         //"key": "alt+h",
         //"command": "workbench.action.increaseViewWidth"
@@ -58,33 +54,33 @@
     //}, 
     // move cursor
     //{
-    //    "key": "alt+i",
-    //    "command": "cursorMove",
-    //    "when": "editorTextFocus",
-    //    "args": {
-    //        "to": "up"
-    //    }
-    //},{
-    //    "key": "alt+k",
-    //    "command": "cursorMove",
-    //    "when": "editorTextFocus",
-    //    "args": {
-    //        "to": "down"
-    //    }
-    //},{
-    //    "key": "alt+j",
-    //    "command": "cursorMove",
-    //    "when": "editorTextFocus",
-    //    "args": {
-    //        "to": "left"
-    //    }
-    //},{
-    //    "key": "alt+l",
-    //    "command": "cursorMove",
-    //    "when": "editorTextFocus",
-    //    "args": {
-    //        "to": "right"
-    //    }
+        "key": "alt+i",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "up"
+        }
+    },{
+        "key": "alt+k",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "down"
+        }
+    },{
+        "key": "alt+j",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "left"
+        }
+    },{
+        "key": "alt+l",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "right"
+        }
     //},{
     //    "key": "alt+o",
     //    "command": "cursorWordEndRight",
@@ -191,11 +187,11 @@
     //    "key": "alt+n",
     //    "command": "deleteRight",
     //    "when": "textInputFocus && !editorReadonly"
-    //},{ // comment
-    //    "key": "ctrl+\\",
-    //    "command": "editor.action.commentLine",
-    //    "when": "editorTextFocus && !editorReadonly" 
-    //},{
+    // comment
+    },{
+        "key": "ctrl+\\",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly" 
     //    "key": "ctrl+shift+k",
     //    "command": "editor.action.moveLinesDownAction",
     //    "when": "editorTextFocus && !editorReadonly"
@@ -203,11 +199,10 @@
     //    "key": "ctrl+shift+i",
     //    "command": "editor.action.moveLinesUpAction",
     //    "when": "editorTextFocus && !editorReadonly"
-    //},{
-    //    "key": "alt+shift+g",
-    //    "command": "editor.action.goToDeclaration",
-    //    "when": "editorTextFocus"
-    //},{
+    },{
+        "key": "alt+g d",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus"
     //    "key": "alt+l",
     //    "command": "breadcrumbs.focusNext",
     //    "when": "breadcrumbsActive && breadcrumbsVisible"
@@ -225,7 +220,7 @@
     //    "command": "workbench.action.debug.stepOver",
     //    "when": "debugState == 'stopped'"
     //}
-    {
+    },{
         "key": "alt+p",
         "command": "periscope.search"
     }
