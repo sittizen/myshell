@@ -8,4 +8,5 @@ sudo dpkg -i glab_1.37.0_Linux_x86_64.deb
 sudo apt install rustup
 rustup update stable
 cargo install glim-tui
-carglo install serie
+cargo install serie
+# install https://extensions.gnome.org/extension/7065/tiling-shell/

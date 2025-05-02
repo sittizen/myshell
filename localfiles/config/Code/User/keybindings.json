@@ -4,6 +4,12 @@
         "command": "-workbench.actions.view.problems",
         "when": "workbench.panel.markers.view.active" 
     },
+    // copilot
+    {
+        "key": "alt+c c",
+        "command": "github.copilot.chat.generate",
+        "when": "editorFocus"
+    },
     // views
     { 
         "key": "alt+v p",
