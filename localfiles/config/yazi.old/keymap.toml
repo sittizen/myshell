@@ -1,9 +1,0 @@
-[manager]
-
-prepend_keymap = [
-	{ on = "i", run = "arrow -1", desc = "Move cursor up" },
-	{ on = "k", run = "arrow 1",  desc = "Move cursor down" },
-	{ on = "j", run = "leave", desc = "Go back to the parent directory" },
-	{ on = "l", run = "enter", desc = "Enter the child directory" },
-	{ on = ["f", "g"], run = "plugin fg", desc = "Search file by content" },
-]
