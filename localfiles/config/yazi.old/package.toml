@@ -1,0 +1,9 @@
+[[plugin.deps]]
+use = "lpnh/fr"
+rev = "92edf0b"
+hash = "b0edc5e9b7f44b2d3303e74f785d0bc9"
+
+[[flavor.deps]]
+use = "kmlupreti/ayu-dark"
+rev = "5412a78"
+hash = "60690920e8c0f9f81ff02009de5d156f"

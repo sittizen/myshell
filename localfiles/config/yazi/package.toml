@@ -3,6 +3,16 @@ use = "lpnh/fr"
 rev = "92edf0b"
 hash = "b0edc5e9b7f44b2d3303e74f785d0bc9"
 
+[[plugin.deps]]
+use = "AnirudhG07/plugins-yazi:copy-file-contents"
+rev = "524c52c"
+hash = "27c50e6bc15c09096505b805b238ade0"
+
+[[plugin.deps]]
+use = "Ape/open-with-cmd"
+rev = "433cf30"
+hash = "86e0312b01bc5762813c6c1d0517f073"
+
 [[flavor.deps]]
 use = "kmlupreti/ayu-dark"
 rev = "5412a78"
