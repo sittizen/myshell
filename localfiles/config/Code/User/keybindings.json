@@ -30,6 +30,9 @@
         "key": "alt+v c",
         "command": "workbench.action.closeActiveEditor"
     },{
+        "key": "alt+v g",
+        "command": "workbench.action.closeAllGroups"
+    },{
         "key": "ctrl+0",
         "command": "editor.action.fontZoomReset"
     },{
@@ -88,28 +91,6 @@
             "to": "right"
         }
     //},{
-    //    "key": "alt+o",
-    //    "command": "cursorWordEndRight",
-    //    "when": "editorTextFocus",
-    //},{
-    //    "key": "alt+u",
-    //    "command": "cursorWordLeft",
-    //    "when": "editorTextFocus",
-    //},{
-    //    "key": "alt+f",
-    //    "command": "cursorMove",
-    //    "when": "editorTextFocus",
-    //    "args": {
-    //        "to": "wrappedLineEnd"
-    //    }
-    //},{
-    //    "key": "alt+s",
-    //    "command": "cursorMove",
-    //    "when": "editorTextFocus",
-    //    "args": {
-    //        "to": "wrappedLineFirstNonWhitespaceCharacter"
-    //    }
-    //},{
     //    "key": "alt+r",
     //    "command": "gotoNextPreviousMember.previousMember",
     //    "when": "editorTextFocus"
@@ -117,39 +98,6 @@
     //    "key": "alt+t",
     //    "command": "gotoNextPreviousMember.nextMember",
     //    "when": "editorTextFocus"
-    //},{ // move and select
-    //    "key": "alt+shift+i",
-    //    "command": "cursorUpSelect",
-    //    "when": "textInputFocus",
-    //},{
-    //    "key": "alt+shift+k",
-    //    "command": "cursorDownSelect",
-    //    "when": "textInputFocus",
-    //},{
-    //    "key": "alt+shift+j",
-    //    "command": "cursorLeftSelect",
-    //    "when": "textInputFocus",
-    //},{
-    //    "key": "alt+shift+l",
-    //    "command": "cursorRightSelect",
-    //    "when": "textInputFocus",
-    //},{
-    //    "key": "alt+shift+o",
-    //    "command": "cursorWordEndRightSelect",
-    //    "when": "textInputFocus",
-    //},{
-    //    "key": "alt+shift+u",
-    //    "command": "cursorWordEndLeftSelect",
-    //    "when": "textInputFocus",
-    //},{
-    //    "key": "alt+shift+n",
-    //    "command": "cursorColumnSelectDown",
-    //    "when": "textInputFocus",
-    //},{
-    //    "key": "alt+shift+m",
-    //    "command": "cursorColumnSelectUp",
-    //    "when": "textInputFocus",
-    //},{
     //    "key": "alt+k",
     //    "command": "workbench.action.quickOpenNavigateNext",
     //    "when": "inQuickOpen"
@@ -165,46 +113,11 @@
     //    "key": "alt+k",
     //    "command": "list.focusDown",
     //    "when": "listFocus && !inputFocus",
-    //},{ // delete
-    //    "key": "alt+d w",
-    //    "command": "deleteInsideWord",
-    //    "when": "textInputFocus && !editorReadonly"
-    //},{
-    //    "key": "alt+d b",
-    //    "command": "deleteWordLeft",
-    //    "when": "textInputFocus && !editorReadonly"
-    //},{
-    //    "key": "alt+d e",
-    //    "command": "deleteWordRight",
-    //    "when": "textInputFocus && !editorReadonly"
-    //},{
-    //    "key": "alt+d s",
-    //    "command": "deleteAllRight",
-    //    "when": "textInputFocus && !editorReadonly"
-    //},{
-    //    "key": "alt+d a",
-    //    "command": "deleteAllLeft",
-    //    "when": "textInputFocus && !editorReadonly"
-    //},{
-    //    "key": "alt+d d",
-    //    "command": "editor.action.deleteLines",
-    //    "when": "textInputFocus && !editorReadonly"
-    //},{
-    //    "key": "alt+n",
-    //    "command": "deleteRight",
-    //    "when": "textInputFocus && !editorReadonly"
     // comment
     },{
         "key": "ctrl+\\",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly" 
-    //    "key": "ctrl+shift+k",
-    //    "command": "editor.action.moveLinesDownAction",
-    //    "when": "editorTextFocus && !editorReadonly"
-    //    },{
-    //    "key": "ctrl+shift+i",
-    //    "command": "editor.action.moveLinesUpAction",
-    //    "when": "editorTextFocus && !editorReadonly"
     },{
         "key": "alt+g d",
         "command": "editor.action.goToDeclaration",
