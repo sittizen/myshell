@@ -48,21 +48,20 @@
         "command": "workbench.action.togglePanel",
         "when": "terminalFocus"
     },{
-    //{
-        //"key": "alt+h",
-        //"command": "workbench.action.increaseViewWidth"
-    //},{
-        //"key": "alt+g",
-        //"command": "workbench.action.decreaseViewWidth"
-    //},{
-        //"key": "alt+b",
-        //"command": "workbench.action.increaseViewHeight"
-    //},{
-        //"key": "alt+r",
-        //"command": "workbench.action.decreaseViewHeight"
-    //}, 
+        "key": "alt+shift+d",
+        "command": "workbench.action.increaseViewWidth"
+    },{
+        "key": "alt+shift+a",
+        "command": "workbench.action.decreaseViewWidth"
+    },{
+        "key": "alt+shift+s",
+        "command": "workbench.action.increaseViewHeight"
+    },{
+        "key": "alt+shift+w",
+        "command": "workbench.action.decreaseViewHeight"
+    }, 
     // move cursor
-    //{
+    {
         "key": "alt+i",
         "command": "cursorMove",
         "when": "editorTextFocus",

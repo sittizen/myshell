@@ -10,3 +10,7 @@ rustup update stable
 cargo install glim-tui
 cargo install serie
 # install https://extensions.gnome.org/extension/7065/tiling-shell/
+# install dbeaver vim extension
+#   Click on Help from the Menu Icon > Install New Software
+#   Paste the following URL: http://vrapper.sourceforge.net/update-site/stable
+#   Select All The Options, Don't Mark Optional Programming Language Plugins.
