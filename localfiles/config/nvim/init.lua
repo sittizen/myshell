@@ -81,7 +81,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
   callback = function()
-    vim.highlight.on_yank()
+    vim.highlight.on_yank({timeout = 300})
   end,
 })
 
@@ -101,9 +101,6 @@ vim.opt.rtp:prepend(lazypath)
 --
 --  To check the current status of your plugins, run
 --    :Lazy
---
---  To update plugins you can run
---    :Lazy update
 --
 require("lazy").setup({
   spec = {
@@ -149,4 +146,10 @@ require("nvim-treesitter.configs").setup({
     },
   },
 })
+
+local harpoon = require("harpoon")
+harpoon:setup({})
+vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end,
+    { desc = "Add to harpoon list" })
+vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
