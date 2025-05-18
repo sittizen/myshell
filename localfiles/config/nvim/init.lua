@@ -120,7 +120,7 @@ vim.cmd("colorscheme nightfox")
 
 require("mini.statusline").setup()
 
-require('nvim-treesitter.configs').setup({
+require("nvim-treesitter.configs").setup({
   textobjects = {
     select = {
       enable = true,
@@ -149,3 +149,4 @@ require('nvim-treesitter.configs').setup({
     },
   },
 })
+
