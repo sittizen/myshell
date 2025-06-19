@@ -108,6 +108,14 @@ require("lazy").setup({
   }
 })
 
+require("autoread")
+vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, {
+  desc = 'Always autoread',
+  callback = function()
+    vim.cmd("AutoreadOn")
+  end,
+})
+
 require("nightfox").setup({
   options = {
     dim_inactive = true
@@ -152,3 +160,11 @@ harpoon:setup({})
 vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end,
     { desc = "Add to harpoon list" })
 vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+
+vim.lsp.config['pyright'] = {
+  cmd = {'pyright-langserver', '--stdio'},
+  filetypes = { 'python' },
+  root_markers = { '.git' },
+}
+vim.lsp.enable('pyright')
+
