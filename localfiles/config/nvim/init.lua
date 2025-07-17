@@ -73,6 +73,9 @@ vim.keymap.set("n", "<C-k>", ":m .+1<CR>==")
 vim.keymap.set("v", "<C-k>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<C-i>", ":m '<-2<CR>gv=gv")
 
+-- Uppercase word under cursor
+vim.keymap.set('n', '<C-u>', "g~iw", { desc = 'Uppercase word under cursor' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -108,13 +111,6 @@ require("lazy").setup({
   }
 })
 
-require("autoread")
-vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, {
-  desc = 'Always autoread',
-  callback = function()
-    vim.cmd("AutoreadOn")
-  end,
-})
 
 require("nightfox").setup({
   options = {
@@ -168,3 +164,19 @@ vim.lsp.config['pyright'] = {
 }
 vim.lsp.enable('pyright')
 
+require("autoread")
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+     pattern = {"*.py", "*.yaml", "*.sh"},
+     command = "AutoreadOn",
+})
+
+vim.g.copilot_filetypes = {
+  ['*'] = false,
+  ['python'] = true,
+  ['lua'] = true,
+}
+vim.g.copilot_no_tab_map = true
+vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+          expr = true,
+          replace_keycodes = false
+        })
