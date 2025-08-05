@@ -1,9 +1,10 @@
 return {
 	"github/copilot.vim",
+	enabled = false,
 	config = function()
 		vim.g.copilot_filetypes = {
 			["*"] = false,
-			["python"] = true,
+			["python"] = false,
 			["lua"] = false,
 		}
 		vim.g.copilot_no_tab_map = true

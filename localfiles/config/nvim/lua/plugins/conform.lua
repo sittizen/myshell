@@ -9,7 +9,7 @@ return {
 			},
 		})
 		require("conform").formatters.black = {
-			prepend_args = { "-l", "20" },
+			prepend_args = { "-l", "120" },
 		}
 		vim.api.nvim_create_autocmd("BufWritePre", {
 			pattern = "*",

@@ -1,10 +1,3 @@
-if status is-interactive
-   bind \es beginning-of-line
-   bind \ef end-of-line
-   bind \eu backward-word
-   bind \eo forward-word
-end
-
 function y
 	set tmp (mktemp -t "yazi-cwd.XXXXXX")
 	yazi $argv --cwd-file="$tmp"
