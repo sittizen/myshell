@@ -1,24 +1,21 @@
 return {
 	cmd = { "lsproxy", "--stdio" },
-	-- Optional, by default the log level is INFO
 	cmd_env = { RUST_LOG = "none,lsproxy=debug" },
 	filetypes = { "python" },
 	root_markers = {
 		"pyproject.toml",
-		"setup.py",
-		"setup.cfg",
 		"requirements.txt",
-		"Pipfile",
-		"pyrightconfig.json",
-		".git",
 	},
 	settings = {
 		python = {
 			analysis = {
 				autoSearchPaths = true,
 				useLibraryCodeForTypes = true,
-				diagnosticMode = "openFilesOnly",
+				diagnosticMode = "workspace",
 			},
 		},
 	},
+	-- config = function()
+	--	vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+	-- end,
 }
