@@ -1,7 +1,7 @@
 vim.lsp.enable({
 	"lua_ls",
-	-- "pyright",
-	"lsproxy",
+	"pyright",
+	-- "lsproxy",
 	"gopls",
 })
 
