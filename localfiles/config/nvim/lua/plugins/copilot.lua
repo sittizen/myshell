@@ -4,7 +4,8 @@ return {
 	config = function()
 		vim.g.copilot_filetypes = {
 			["*"] = false,
-			["python"] = false,
+			["python"] = true,
+			["sh"] = true,
 			["lua"] = false,
 		}
 		vim.g.copilot_no_tab_map = true

@@ -141,5 +141,14 @@
     },{
         "key": "alt+p",
         "command": "periscope.search"
+    },{
+    "key": "ctrl+alt+a",
+    "commands": ["vscode-harpoon.addEditor"]
+    },{
+    "key": "ctrl+alt+e",
+    "commands": ["vscode-harpoon.editEditors"]
+    },{
+    "key": "alt+y",
+    "commands": ["vscode-harpoon.editorQuickPick"]
     }
 ]

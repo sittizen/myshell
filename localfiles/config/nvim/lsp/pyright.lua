@@ -57,7 +57,6 @@ return {
 		if venv_path == nil then
 			vim.print("Seems you are not in a poetry project subdir")
 		else
-			vim.print("Found .venv in " .. venv_path)
 			client.settings.python = vim.tbl_deep_extend(
 				"force",
 				client.settings.python or {},
