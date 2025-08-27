@@ -7,6 +7,5 @@ function y
 	rm -f -- "$tmp"
 end
 
+fish_vi_key_bindings
 
-# opencode
-fish_add_path /home/simone.cittadini@gruppomol.lcl/.opencode/bin
