@@ -5,12 +5,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank({ timeout = 300 })
 	end,
 })
-
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-	desc = "Always autoreload python and shell files",
-	pattern = { "*.py", "*.sh" },
-	callback = function(ev)
-		require("autoread")
-		vim.cmd(":AutoreadOn")
-	end,
-})

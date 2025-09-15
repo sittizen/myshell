@@ -24,13 +24,13 @@ vim.keymap.set("v", "k", "<down>")
 vim.keymap.set("v", "l", "<right>")
 
 -- Move lines the way I'm used to
-vim.keymap.set("n", "<C-i>", ":m .-2<CR>==")
-vim.keymap.set("n", "<C-k>", ":m .+1<CR>==")
-vim.keymap.set("v", "<C-k>", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "<C-i>", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "<C-i>", ":m .-2<CR>==", { desc = "Move line up" })
+vim.keymap.set("n", "<C-k>", ":m .+1<CR>==", { desc = "Move line down" })
+vim.keymap.set("v", "<C-k>", ":m '>+1<CR>gv=gv", { desc = "Move selected lines down" })
+vim.keymap.set("v", "<C-i>", ":m '<-2<CR>gv=gv", { desc = "Move selected lines up" })
 
--- Uppercase word under cursor
-vim.keymap.set("n", "<C-u>", "g~iw", { desc = "Uppercase word under cursor" })
+vim.keymap.set("n", "\\", ":cd %:h<CR>:e .<CR>", { desc = "Open oil in current buffer dir" })
+vim.keymap.set("n", "<C-u>", "g~iww", { desc = "Uppercase word under cursor" })
 
 -- LSP
 vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })

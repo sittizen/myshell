@@ -1,8 +1,8 @@
 vim.lsp.enable({
 	"lua_ls",
 	"pyright",
-	-- "lsproxy",
 	"gopls",
+	"bashls",
 })
 
 vim.diagnostic.config({
@@ -29,4 +29,4 @@ vim.diagnostic.config({
 	},
 })
 
-vim.lsp.set_log_level("info")
+vim.lsp.set_log_level("warn")
