@@ -55,7 +55,7 @@ return {
 	on_attach = function(client, bufnr)
 		local venv_path = find_venv(vim.api.nvim_buf_get_name(0))
 		if venv_path == nil then
-			vim.print("Seems you are not in a poetry project subdir")
+			vim.print("Seems you are not in a virtualenv subdir")
 		else
 			client.settings.python = vim.tbl_deep_extend(
 				"force",
@@ -69,5 +69,5 @@ return {
 			})
 		end
 	end,
-	log_level = vim.lsp.protocol.MessageType.Warning,
+	log_level = vim.lsp.protocol.MessageType.Error,
 }

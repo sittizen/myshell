@@ -30,7 +30,7 @@ vim.keymap.set("v", "<C-k>", ":m '>+1<CR>gv=gv", { desc = "Move selected lines d
 vim.keymap.set("v", "<C-i>", ":m '<-2<CR>gv=gv", { desc = "Move selected lines up" })
 
 vim.keymap.set("n", "\\", ":cd %:h<CR>:e .<CR>", { desc = "Open oil in current buffer dir" })
-vim.keymap.set("n", "<C-u>", "g~iww", { desc = "Uppercase word under cursor" })
+vim.keymap.set("n", "<C-u>", "g~iw", { desc = "Uppercase word under cursor" })
 
 -- LSP
 vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
