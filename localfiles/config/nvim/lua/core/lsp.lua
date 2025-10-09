@@ -7,7 +7,7 @@ vim.lsp.enable({
 
 vim.diagnostic.config({
 	virtual_lines = true,
-	virtual_text = true,
+	virtual_text = false,
 	underline = false,
 	update_in_insert = false,
 	severity_sort = true,
@@ -29,4 +29,10 @@ vim.diagnostic.config({
 	},
 })
 
-vim.lsp.set_log_level("warn")
+vim.lsp.set_log_level("error")
+
+local isLspDiagnosticsVisible = true
+vim.keymap.set("n", "<leader>lx", function()
+	isLspDiagnosticsVisible = not isLspDiagnosticsVisible
+	vim.diagnostic.config({ virtual_lines = isLspDiagnosticsVisible })
+end, { desc = "toggle visual hints" })
