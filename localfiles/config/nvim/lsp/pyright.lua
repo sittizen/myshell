@@ -18,9 +18,13 @@ local function contains_venv(path)
 	local full_path = path .. "/.venv"
 	local cmd = string.format('test -d "%s" && echo "yes" || echo "no"', full_path)
 	local handle = io.popen(cmd)
-	local result = handle:read("*l")
-	handle:close()
-	return result == "yes"
+	if handle ~= nil then
+		local result = handle:read("*l")
+		handle:close()
+		return result == "yes"
+	else
+		return nil
+	end
 end
 
 local function find_venv(path)
