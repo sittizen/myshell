@@ -56,7 +56,7 @@ return {
 		},
 	},
 	config = function() end,
-	on_attach = function(client, bufnr)
+	on_attach = function(client, _)
 		local venv_path = find_venv(vim.api.nvim_buf_get_name(0))
 		if venv_path == nil then
 			vim.print("Seems you are not in a virtualenv subdir")

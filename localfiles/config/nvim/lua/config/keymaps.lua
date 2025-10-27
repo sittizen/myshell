@@ -29,6 +29,7 @@ vim.keymap.set("n", "<C-k>", ":m .+1<CR>==", { desc = "Move line down" })
 vim.keymap.set("v", "<C-k>", ":m '>+1<CR>gv=gv", { desc = "Move selected lines down" })
 vim.keymap.set("v", "<C-i>", ":m '<-2<CR>gv=gv", { desc = "Move selected lines up" })
 
+-- Other remaps
 vim.keymap.set("n", "\\", ":cd %:h<CR>:e .<CR>", { desc = "Open oil in current buffer dir" })
 vim.keymap.set("n", "<C-u>", "g~iw", { desc = "Uppercase word under cursor" })
 
