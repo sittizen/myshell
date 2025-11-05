@@ -26,6 +26,7 @@ vim.opt.inccommand = "split"
 vim.opt.cursorline = true
 vim.opt.scrolloff = 12
 vim.opt.confirm = true
+vim.opt.conceallevel = 2
 
 vim.o.tabstop = 4
 vim.o.expandtab = true
