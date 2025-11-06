@@ -4,7 +4,17 @@ return {
 	event = "VeryLazy",
 	config = function()
 		require("nvim-surround").setup({
-			-- Configuration here, or leave empty to use defaults
+			keymaps = {
+				insert = false,
+				insert_line = false,
+				normal = "yr",
+				normal_cur = false,
+				normal_line = false,
+				normal_cur_line = false,
+				delete = "dr",
+				change = false,
+				change_line = false,
+			},
 		})
 	end,
 }
