@@ -1,6 +1,6 @@
 alias git-prune="git branch --merged | egrep -v '(^\*|master|dev|production|test)' | xargs git branch -d" 
-alias vt="set -gx VAULT_TOKEN (vault login -method=oidc -token-only 2>/dev/null)"
-alias vr="vault token renew $VAULT_TOKEN"
+alias v="set -gx VAULT_TOKEN (vault login -method=oidc -token-only 2>/dev/null)"
+alias vv="vault token renew $VAULT_TOKEN"
 alias standup="git-standup -a all -d 1"
 alias cat="batcat -p"
 alias l="exa -1 -l --classify --color-scale --icons"
