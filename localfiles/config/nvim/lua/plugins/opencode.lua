@@ -1,9 +1,8 @@
 return {
 	"NickvanDyke/opencode.nvim",
 	dependencies = {
-		-- Recommended for `ask()` and `select()`.
-		-- Required for `toggle()`.
-		{ "folke/snacks.nvim", opts = { input = {}, picker = {} } },
+		-- depends on snacks but we explicitly install and configure it in his own file
+		-- { "folke/snacks.nvim", opts = { input = {}, picker = {} } },
 	},
 	config = function()
 		vim.g.opencode_opts = {
